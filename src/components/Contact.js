@@ -55,8 +55,8 @@ export default function Contact() {
           <h5>Contact</h5>
           <h1>Let's connect.</h1>
           <p style={{ paddingBottom: "30px" }}>
-            If you want to know more about me or my work, or if you would just
-            like to say hello, send me a message. I'd love to hear from you.
+            I'm currently looking for new opportunities and my inbox is always open.
+            If you would like to know more about me, my work, or just want to say hello, send me a message. I'd love to hear from you.
           </p>
           <Form
             noValidate

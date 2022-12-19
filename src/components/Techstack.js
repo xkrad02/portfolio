@@ -4,17 +4,19 @@ import "../styles.css";
 import {
   SiHtml5,
   SiCss3,
+  SiBootstrap,
   SiJavascript,
   SiReact,
+  SiMysql,
   SiVisualstudiocode,
   SiGithub,
   SiFigma,
 } from "react-icons/si";
 
 function Techstack() {
-  return (<section id="techstack">
-    <div className="container-md p-0">
-      
+  return (
+    <section id="techstack">
+      <div className="container-md p-0">
         <h5>Techstack</h5>
         <h1>Professional Skillset</h1>
         <h2>Web Development</h2>
@@ -42,9 +44,23 @@ function Techstack() {
 
           <Col className="icon md-4">
             <li>
+              <SiBootstrap />
+            </li>
+            <p>Bootstrap</p>
+          </Col>
+
+          <Col className="icon md-4">
+            <li>
               <SiReact />
             </li>
             <p>ReactJS</p>
+          </Col>
+
+          <Col className="icon md-4">
+            <li>
+              <SiMysql />
+            </li>
+            <p>MySQL</p>
           </Col>
 
           <h2>Softwares</h2>
@@ -69,9 +85,9 @@ function Techstack() {
             </li>
             <p>Figma</p>
           </Col>
-        </Row>
-      {" "}
-    </div></section>
+        </Row>{" "}
+      </div>
+    </section>
   );
 }
 
