@@ -1,0 +1,416 @@
+/* General */
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.container-main {
+  padding: 8rem 12rem;
+  background: rgb(185, 238, 233, 0.6);
+}
+
+.container {
+  min-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+p {
+  font-weight: 400;
+  font-size: 0.75rem;
+  font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  font-size: clamp(2rem, 1.9rem + 0.5vw, 2.5rem);
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 1.1rem + 0.75vw, 2rem);
+}
+
+h3 {
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+}
+
+h5 {
+  color: #3ed1c0;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.intro-title {
+  font-size: 1.875rem;
+  font-size: clamp(1.875rem, 1.625rem + 1.25vw, 3.125rem);
+}
+
+.nav-links,
+.footer-icons {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  align-items: center;
+}
+
+.nav-links li,
+.footer-icons li {
+  padding-left: 50px;
+}
+
+li {
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #3ed1c0;
+}
+
+a:hover {
+  color: orange;
+}
+
+#techstack,
+#contact {
+  background: rgb(136, 244, 232);
+  background: linear-gradient(
+    180deg,
+    rgba(136, 244, 232, 0.3) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+#about,
+#contact,
+#techstack,
+#projects {
+  min-height: 100vh;
+  padding-top: 9em;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#about h3 {
+  font-weight: normal;
+}
+
+/* Navbar */
+.navbar {
+  height: 90px;
+  border-radius: 20px 20px 0 0;
+  background: rgb(136, 244, 232);
+  background: linear-gradient(
+    180deg,
+    #ddfcf8 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  padding: 0 125px;
+  width: 100%;
+  top: 0;
+  position: sticky;
+  z-index: 2;
+}
+
+.logo {
+  margin-top: 15px;
+  height: 5.5rem;
+}
+
+.nav-links {
+  margin: 0;
+  padding-top: 20px;
+}
+
+.nav-links li {
+  padding-left: 50px;
+  height: 100%;
+}
+
+.nav-links li a {
+  font-size: 0.875rem;
+  font-size: clamp(0.875rem, 0.775rem + 0.5vw, 1.375rem);
+}
+
+.container-content {
+  margin: auto 8rem;
+}
+
+/* About us */
+#about .intro,
+#about .abt-intro {
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+
+#about img {
+  padding-right: 35px;
+}
+
+.abt-intro {
+  text-align: left;
+  padding: 30px 50px 0 30px;
+}
+
+#about .container-content {
+  margin-right: 1rem;
+}
+
+.intro-image {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(5px 5px 12px #3ed1c079);
+  object-fit: contain;
+}
+
+.contactImg {
+  margin: auto !important;
+  padding-bottom: 50px;
+}
+
+.icons {
+  font-size: 30px;
+}
+
+/* techstack */
+#techstack h2,
+#tools h2 {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  font-weight: bold;
+}
+
+.techstack-icons {
+  font-size: 3.125rem;
+  font-size: clamp(3.125rem, 2.875rem + 1.25vw, 4.375rem);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 220px;
+  min-width: 220px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+  background-color: white;
+  justify-content: center;
+  margin: 10px;
+}
+
+.icon li {
+  padding-right: 15px;
+}
+
+.icon p {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+/* projects */
+.projects {
+  margin: auto;
+  justify-content: space-between;
+}
+
+.project {
+  width: 300px;
+  max-width: fit-content;
+  height: 350px;
+  border-radius: 5px;
+  padding: 0;
+  margin: 30px auto;
+  filter: drop-shadow(5px 5px 12px #3ed1c041);
+  background: #fff;
+}
+
+.project img {
+  height: 250px;
+  width: 300px;
+  max-width: 100%;
+  object-fit: contain;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.pj-description {
+  padding: 10px 10px;
+  text-align: left;
+}
+
+.pj-title-icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pjGitIcon {
+  color: #3ed1c0;
+  font-size: 1.2rem;
+}
+
+.pjGitIcon:hover {
+  color: orange;
+}
+
+/* Footer */
+#footer {
+  background: linear-gradient(
+    180deg,
+    #ddfcf8 0%,
+    rgba(200, 255, 175, 0.05) 100%
+  );
+  height: 60px;
+  display: flex;
+  padding: 0 125px;
+  width: 100%;
+}
+
+.copyright {
+  margin: auto;
+  margin-left: 0;
+  font-size: 0.75rem;
+  font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
+}
+
+/* Contact */
+#contact {
+  text-align: left;
+}
+
+.button {
+  width: 25%;
+  background-color: #3ed1c0;
+  border: none;
+  border-radius: 30px;
+  padding: 8px 0;
+}
+
+.button:hover {
+  transition: 0.6s;
+  background-color: orange !important;
+}
+
+@media screen and (max-width: 1242px) {
+  .container-main {
+    padding: 6rem 10rem;
+  }
+
+  .container-content {
+    margin: auto 6rem;
+  }
+
+  .navbar,
+  #footer {
+    padding: 0 10%;
+  }
+
+  .nav-links li {
+    padding-left: 31px;
+  }
+  .logo img {
+    height: 5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container-main {
+    padding: 5rem 9rem;
+  }
+
+  .container-content {
+    margin: auto 3rem;
+  }
+
+  .logo img {
+    left: 5;
+    top: 0;
+    position: absolute;
+  }
+
+  .nav-links {
+    position: relative;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 877px) {
+  .nav-links {
+    align-items: flex-end;
+  }
+
+  .logo {
+    height: 4.5rem;
+  }
+
+  .navbar {
+    padding: 1% 7%;
+  }
+
+  .nav-links li,
+  .footer-icons li {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-main {
+    padding: 4rem 7rem;
+  }
+
+  .container-content {
+    margin: auto 2rem;
+  }
+
+  .contactImg {
+    height: 50%;
+  }
+
+  #contact {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 686px) { 
+  .navbar {
+    padding: 1% 3%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-main {
+    padding: 3rem 6rem;
+  }
+
+  .navbar {
+    height: 250px;
+  }
+
+  ul.nav-links {
+    padding: 15px;
+  }
+
+  #about {
+    margin-top: -150px;
+  }
+}
